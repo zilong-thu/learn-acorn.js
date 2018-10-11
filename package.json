@@ -1,0 +1,16 @@
+{
+  "name": "learn-acorn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "^6.0.2",
+    "acorn-walk": "^6.1.0",
+    "escodegen": "^1.11.0"
+  }
+}
