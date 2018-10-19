@@ -1,7 +1,17 @@
+/**
+ * 简单示例
+ */
 const fs = require('fs');
+const path = require('path');
 const acorn = require('acorn');
 
-const code = 'var a = 1;';
-const ast = acorn.parse(code);
+const str = `
+var a = 1;
+var b = /key/.test('hello');
+`;
 
-fs.writeFileSync('1-acorn-intro.json', JSON.stringify(ast));
+const ast = acorn.parse(str, {
+  locations: false,
+});
+
+fs.writeFileSync(path.resolve(__dirname, '1-out.json'), JSON.stringify(ast, null, 2));

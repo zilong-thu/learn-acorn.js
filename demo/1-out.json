@@ -1,0 +1,90 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 41,
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "start": 1,
+      "end": 11,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 5,
+          "end": 10,
+          "id": {
+            "type": "Identifier",
+            "start": 5,
+            "end": 6,
+            "name": "a"
+          },
+          "init": {
+            "type": "Literal",
+            "start": 9,
+            "end": 10,
+            "value": 1,
+            "raw": "1"
+          }
+        }
+      ],
+      "kind": "var"
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 12,
+      "end": 40,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "start": 16,
+          "end": 39,
+          "id": {
+            "type": "Identifier",
+            "start": 16,
+            "end": 17,
+            "name": "b"
+          },
+          "init": {
+            "type": "CallExpression",
+            "start": 20,
+            "end": 39,
+            "callee": {
+              "type": "MemberExpression",
+              "start": 20,
+              "end": 30,
+              "object": {
+                "type": "Literal",
+                "start": 20,
+                "end": 25,
+                "value": {},
+                "raw": "/key/",
+                "regex": {
+                  "pattern": "key",
+                  "flags": ""
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "start": 26,
+                "end": 30,
+                "name": "test"
+              },
+              "computed": false
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "start": 31,
+                "end": 38,
+                "value": "hello",
+                "raw": "'hello'"
+              }
+            ]
+          }
+        }
+      ],
+      "kind": "var"
+    }
+  ],
+  "sourceType": "script"
+}
